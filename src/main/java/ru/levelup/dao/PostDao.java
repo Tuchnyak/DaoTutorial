@@ -6,6 +6,6 @@ import java.util.Date;
 
 public interface PostDao {
 
-    Post createPost (String title, String text, Date postedAt);
+    Post createPost(String title, String text, Date postedAt);
 
 }
