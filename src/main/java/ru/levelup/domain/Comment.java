@@ -30,4 +30,45 @@ public class Comment implements Serializable {
     @ManyToOne
     @JoinColumn(name = "POST_ID")
     private Post commentedPost;
+
+    /********************************/
+    public long getCommentId() {
+        return commentId;
+    }
+
+    public void setCommentId(long commentId) {
+        this.commentId = commentId;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public Date getCommentedAt() {
+        return commentedAt;
+    }
+
+    public void setCommentedAt(Date commentedAt) {
+        this.commentedAt = commentedAt;
+    }
+
+    public User getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(User author) {
+        this.author = author;
+    }
+
+    public Post getCommentedPost() {
+        return commentedPost;
+    }
+
+    public void setCommentedPost(Post commentedPost) {
+        this.commentedPost = commentedPost;
+    }
 }
